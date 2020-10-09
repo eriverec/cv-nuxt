@@ -22,8 +22,7 @@
 import client from '~/plugins/contentful';
 
 export default {
-  asyncData({ params, error, payload }) {
-    if (payload) return { blogPost: payload };
+  asyncData({ params}) {
     return client
       .getEntries({
         content_type: 'blogPost',
