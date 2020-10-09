@@ -1,0 +1,21 @@
+{
+  "name": "cv-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/markdownit": "^1.2.10",
+    "contentful": "^7.14.7",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6",
+    "uikit": "^3.5.8"
+  },
+  "devDependencies": {}
+}
