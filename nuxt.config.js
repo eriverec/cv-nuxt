@@ -2,7 +2,11 @@ require('dotenv').config()
 
 export default {
 
-    // Target (https://go.nuxtjs.dev/config-target)
+  generate: {
+    fallback: true
+  },
+
+  // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
