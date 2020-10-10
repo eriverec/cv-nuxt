@@ -1,5 +1,15 @@
 require('dotenv').config()
+
+const config = require('./plugins/contentful.js')
+
 export default {
+
+  env: {
+    CTF_SPACE_ID: config.CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN,
+    CTF_PERSON_ID: config.CTF_PERSON_ID,
+    CTF_BLOG_POST_TYPE_ID: config.CTF_BLOG_POST_TYPE_ID
+  },
 
   
   // Target (https://go.nuxtjs.dev/config-target)
