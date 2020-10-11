@@ -45,7 +45,11 @@ export default {
   ],
 
   markdownit: {
-    injected: true
+    injected: true,
+    html: true,
+    quotes: '“”‘’',
+    linkify: true,
+    typographer: true
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
