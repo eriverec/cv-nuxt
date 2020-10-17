@@ -1,0 +1,169 @@
+.hero.is-success {
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+}
+
+.b-1 {
+  margin-bottom: 0.5rem;
+}
+
+:root {
+  --mainColor: #333;
+}
+a {
+  background: linear-gradient(
+    to bottom,
+    var(--mainColor) 0%,
+    var(--mainColor) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-size 0.2s;
+}
+
+.__icono {
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.__icono:hover {
+  transform: translate(0, 10px);
+}
+
+a:hover {
+  background-size: 4px 50px;
+  color: #fff;
+}
+.title {
+  margin: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.title-2 {
+  font-size: 3em;
+  margin: 0px 200px 0px 200px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 3rem 1.5rem !important;
+  }
+  .title-2 {
+    font-size: 2em;
+    margin: 0px 50px 0px 50px;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px) {
+  .section {
+    padding: 3rem 1.5rem !important;
+  }
+  .title-2 {
+    font-size: 2em;
+    margin: 0px 50px 0px 50px;
+  }
+}
+
+p {
+  font-size: 20px;
+}
+.section {
+  padding: 3rem 5.5rem;
+}
+.column {
+  margin: 25px;
+}
+.box {
+  box-shadow: 0 0.5em 1em 3.875px rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+}
+.timeline .timeline-item .timeline-content .heading {
+  font-weight: 700 !important;
+  font-size: 13px;
+}
+
+.timeline .timeline-item .timeline-content .heading-p {
+  font-size: 15px;
+}
+
+.table{
+  margin: auto;
+  box-shadow: 0 0.5em 1em 3.875px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+}
+
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: #06c;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #06c;
+}
+
+.tabset > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+
+
+.tabset {
+  max-width: 65em;
+}
