@@ -32,7 +32,7 @@ export default {
     '~/plugins/contentful',
     {
       src: "@/plugins/aos",
-      ssr: false
+      ssr: true
     }
     
   ],
