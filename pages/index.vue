@@ -46,45 +46,7 @@
         <!-- INFORMACION -->
         <h1 class="title is-3" data-aos="fade-up">Información</h1>
         <div v-html="$md.render(cv.fields.informacion)"></div>
- <table
-          class="table is-bordered is-striped is-hoverable"
-          data-aos="fade">
-          <thead></thead>
-          <tbody>
-            <tr>
-              <th>
-                <span class="tag is-info"> TELEFONO </span>
-              </th>
-              <td>0978775201</td>
-            </tr>
-            <tr>
-              <th>
-                <span class="tag is-info"> EMAIL </span>
-              </th>
-              <td>eriveraec@gmail.com</td>
-            </tr>
-            <tr>
-              <th><span class="tag is-info"> DIRECCION </span></th>
-              <td>Mapasingue Este Mz. 56 Solar 4 Coop. Quisquis</td>
-            </tr>
-            <tr>
-              <th><span class="tag is-info"> CEDULA</span></th>
-              <td>0950790071</td>
-            </tr>
-            <tr>
-              <th><span class="tag is-info"> ESTADO CIVIL </span></th>
-              <td>Casado</td>
-            </tr>
-            <tr>
-              <th><span class="tag is-info">FECHA DE NACIMIENTO </span></th>
-              <td>14 de Marzo de 1994</td>
-            </tr>
-            <tr>
-              <th><span class="tag is-info"> LICENCIA DE CONDUCIR</span></th>
-              <td>Tipo B</td>
-            </tr>
-          </tbody>
-        </table>
+
        
       </section>
     </div>

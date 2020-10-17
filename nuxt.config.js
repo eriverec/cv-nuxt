@@ -31,8 +31,8 @@ export default {
   plugins: [
     '~/plugins/contentful',
     {
-      src: "@/plugins/aos",
-      ssr: true
+      src: "~/plugins/aos",
+      ssr: false
     }
     
   ],
