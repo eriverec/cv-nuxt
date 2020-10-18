@@ -35,7 +35,8 @@ export default {
 
     {
       src: "~/plugins/aos",
-      ssr: false
+      //ssr: false,
+      mode: client
     }
 
 
