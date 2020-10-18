@@ -7,8 +7,8 @@
 
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
-          <div class="container has-text-centered animated fadeInDow">
-            <h1 class="title-2 animated fadeInDow">
+          <div class="container has-text-centered">
+            <h1 class="title-2 animated fadeIn">
               C U R R I C U L U M <br />
               V I T A E
             </h1><br>
@@ -44,7 +44,7 @@
         <h1 class="title is-3" data-aos="fade-up">Referencia Personal</h1>
         <div v-html="$md.render(cv.fields.referenciaPersonal)"></div>
         <!-- CONOCIMIENTO -->
-        <h1 class="title is-3" data-aos="fade-up">Conocimientos y dominios</h1>
+        <h1 class="title is-3 " data-aos="fade-up">Conocimientos y dominios</h1>
         <div v-html="$md.render(cv.fields.conocimientoYDominio)"></div>
 
         <!-- INFORMACION -->

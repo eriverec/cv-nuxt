@@ -50,25 +50,7 @@ a:hover {
   color: #fff;
 }
 
-@media (max-width: 600px) {
-  .section {
-    padding: 3rem 1.5rem !important;
-  }
-  .title-2 {
-    font-size: 2em;
-    margin: 0px 50px 0px 50px;
-  }
-}
 
-@media screen and (max-width: 900px) and (min-width: 601px) {
-  .section {
-    padding: 3rem 1.5rem !important;
-  }
-  .title-2 {
-    font-size: 2em;
-    margin: 0px 50px 0px 50px;
-  }
-}
 
 p {
   font-size: 20px;
@@ -97,73 +79,40 @@ p {
   box-shadow: 0 0.5em 1em 3.875px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
 }
 
-/*
- CSS for the main interaction
-*/
-.tabset > input[type="radio"] {
-  position: absolute;
-  left: -200vw;
+
+
+
+@media (max-width: 600px) {
+  .section {
+    padding: 3rem 1.5rem !important;
+  }
+  .title-2 {
+    font-size: 1.3em;
+    margin: 0px 50px 0px 50px;
+  }
+  .tag{
+    font-size: 11px;
+  }
+  td{
+    font-size: 14px !important;
+  }
+  .title.is-3{
+    font-size: 1.3rem !important;
+  }
 }
 
-.tabset .tab-panel {
-  display: none;
-}
-
-.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
-.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
-.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
-.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
-.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
-.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
-  display: block;
-}
-
-
-
-.tabset > label {
-  position: relative;
-  display: inline-block;
-  padding: 15px 15px 25px;
-  border: 1px solid transparent;
-  border-bottom: 0;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.tabset > label::after {
-  content: "";
-  position: absolute;
-  left: 15px;
-  bottom: 10px;
-  width: 22px;
-  height: 4px;
-  background: #8d8d8d;
-}
-
-.tabset > label:hover,
-.tabset > input:focus + label {
-  color: #06c;
-}
-
-.tabset > label:hover::after,
-.tabset > input:focus + label::after,
-.tabset > input:checked + label::after {
-  background: #06c;
-}
-
-.tabset > input:checked + label {
-  border-color: #ccc;
-  border-bottom: 1px solid #fff;
-  margin-bottom: -1px;
-}
-
-.tab-panel {
-  padding: 30px 0;
-  border-top: 1px solid #ccc;
-}
-
-
-
-.tabset {
-  max-width: 65em;
+@media screen and (max-width: 900px) and (min-width: 601px) {
+  .section {
+    padding: 3rem 1.5rem !important;
+  }
+  .title-2 {
+    font-size: 2em;
+    margin: 0px 50px 0px 50px;
+  }
+  .tag{
+    font-size: 11px !important;
+  }
+  td{
+    font-size: 14px !important;
+  }
 }
