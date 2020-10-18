@@ -12,8 +12,8 @@
   box-sizing: border-box;
   margin: 0;
 }
-body{
-  font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 </style>
 
@@ -44,8 +44,7 @@ export default {
         },
         {
           //rel: "stylesheet",
-          //href:
-          //"https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css"
+          //href: "https://unpkg.com/aos@next/dist/aos.css",
         },
       ],
       script: [
@@ -53,9 +52,7 @@ export default {
           type: "text/javascript",
           src: "https://unpkg.com/ionicons@5.2.3/dist/ionicons.js",
         }, // Insert in body
-        // with shorthand
-        //{ t: "application/ld+json", i: '{ "@context": "http://schema.org" }' }
-        // ...
+       
       ],
       style: [
         {
@@ -70,5 +67,4 @@ export default {
   },
 };
 </script>
-
 
