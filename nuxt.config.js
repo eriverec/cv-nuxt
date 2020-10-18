@@ -24,7 +24,13 @@ export default {
 
     ]
   },
-  script: [{}],
+  script: [{
+    src: 'https://www.googletagmanager.com/gtag/js?id=249732089',
+    async: true
+  }],
+
+ 
+  loading: {color: 'black',height: '3px'},
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['~/assets/main.css'],
@@ -35,7 +41,7 @@ export default {
       src: '~/plugins/contentful'
     },
     {
-      src: '~plugins/ga.js',
+      src: '~/plugins/ga.js',
       mode: 'client'
     }
     //{ src: "@/plugins/aos", ssr: false }
