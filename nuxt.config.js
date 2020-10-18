@@ -52,6 +52,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
     '@nuxtjs/bulma',
+    '@nuxtjs/pwa',
     '@nuxtjs-ext/bulma-extensions',
     '@neneos/nuxt-animate.css',
     '@nuxtjs/markdownit',

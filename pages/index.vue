@@ -37,9 +37,6 @@
         <h1 class="title is-3" data-aos="fade-up">Experencia Laboral</h1>
         <div v-html="$md.render(cv.fields.experienciaLaboral)"></div>
 
-        <div class="btn" data-aos="fade-up">watch me move!</div>
-
-
         <!-- REFERENCIA -->
         <h1 class="title is-3" data-aos="fade-up">Referencia Personal</h1>
         <div v-html="$md.render(cv.fields.referenciaPersonal)"></div>
