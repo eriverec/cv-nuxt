@@ -33,8 +33,8 @@ export default {
     async: true
   }],
 
- 
-  loading: {color: 'black',height: '3px'},
+
+  loading: { color: 'black', height: '3px' },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['~/assets/main.css'],
