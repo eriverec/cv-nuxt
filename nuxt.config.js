@@ -34,7 +34,7 @@ export default {
     {
       src: '~/plugins/contentful'
     },
-    { src: "@/plugins/aos", ssr: false }
+    //{ src: "@/plugins/aos", ssr: false }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

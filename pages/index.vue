@@ -7,10 +7,13 @@
 
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="title-2 animated fadeInDown">
-              Me nombre es <a href="">{{ cv.fields.nombres }}</a> y ésta es mi
-              hoja de vida.
+          <div class="container has-text-centered animated fadeInDow">
+            <h1 class="title-2 animated fadeInDow">
+              C U R R I C U L U M <br />
+              V I T A E
+            </h1><br>
+            <h1 class="title-2">
+             <!-- <a href="">{{ cv.fields.nombres }}</a>-->
             </h1>
             <h2 class="subtitle">
               <ion-icon
