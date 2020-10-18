@@ -34,6 +34,10 @@ export default {
     {
       src: '~/plugins/contentful'
     },
+    {
+      src: '~plugins/ga.js',
+      mode: 'client'
+    }
     //{ src: "@/plugins/aos", ssr: false }
   ],
 
