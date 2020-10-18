@@ -70,5 +70,16 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+    postcss: {
+      preset: {
+        features: {
+          customProperties: false
+        }
+      }
+    },
+    /*
+    ** You can extend webpack config here
+    */
+    extend(config, ctx) { }
+  },
 }
