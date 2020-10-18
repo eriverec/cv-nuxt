@@ -8,7 +8,7 @@
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="title-2">
+            <h1 class="title-2 animated fadeInDown">
               Me nombre es <a href="">{{ cv.fields.nombres }}</a> y ésta es mi
               hoja de vida.
             </h1>
@@ -36,6 +36,10 @@
         <!-- EXPERIENCIA -->
         <h1 class="title is-3" data-aos="fade-up">Experencia Laboral</h1>
         <div v-html="$md.render(cv.fields.experienciaLaboral)"></div>
+
+        <div class="btn">watch me move!</div>
+
+
         <!-- REFERENCIA -->
         <h1 class="title is-3" data-aos="fade-up">Referencia Personal</h1>
         <div v-html="$md.render(cv.fields.referenciaPersonal)"></div>
@@ -46,17 +50,24 @@
         <!-- INFORMACION -->
         <h1 class="title is-3" data-aos="fade-up">Información</h1>
         <div v-html="$md.render(cv.fields.informacion)"></div>
-
-       
       </section>
     </div>
   </div>
 </template>
 
+<script>
+$(window).scroll(function () {
+  if ($(window).scrollTop() <= 1000) {
+    $(".btn").addClass("animated fadeInLeft");
+  } else {
+    $(".btn").removeClass("animated fadeInLeft");
+  }
+});
+</script>
+
 
 <script>
 import client from "~/plugins/contentful";
-
 
 export default {
   //BLOG

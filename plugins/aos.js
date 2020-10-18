@@ -1,23 +1,7 @@
-import Vue from 'vue'
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-/*
- Vue.use(AOS.init({
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
- }));
-*/
+import AOS from "aos";
 
- const aosPlugin = {
-  install: () => {
-    AOS.init({
-      // add your settings here
-    })
-  },
-}
+import "aos/dist/aos.css";
 
-if (process.client) {
-  Vue.use(aosPlugin);
-}
+export default ({ app }) => {
+  app.AOS = new AOS.init({ disable: "phone" }); // eslint-disable-line new-cap
+};

@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@neneos/nuxt-animate.css": "0.0.1",
     "@nuxtjs-ext/bulma-extensions": "^1.0.0",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/bulma": "^1.3.0",
@@ -18,7 +19,9 @@
     "bulma-timeline": "^3.0.4",
     "contentful": "^7.14.7",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "gsap": "^3.5.1",
+    "nuxt": "^2.14.6",
+    "vue-scrollmagic": "^1.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

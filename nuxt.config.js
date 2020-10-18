@@ -32,14 +32,11 @@ export default {
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     '~/plugins/contentful',
-
     {
-      src: "~/plugins/aos",
-      //ssr: false,
-      mode: client
-    }
-
-
+      src: '~plugins/vue-scrollmagic.js',
+      ssr: false
+    },
+    { src: "@/plugins/aos", ssr: false }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -56,7 +53,7 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/bulma',
     '@nuxtjs-ext/bulma-extensions',
-
+    '@neneos/nuxt-animate.css',
     '@nuxtjs/markdownit',
   ],
 
