@@ -29,7 +29,7 @@ export default {
     ]
   },
   script: [{
-    src: 'https://www.googletagmanager.com/gtag/js?id=249732089',
+    src: 'https://www.googletagmanager.com/gtag/js?id=UA-249732089-1',
     async: true
   }],
 
