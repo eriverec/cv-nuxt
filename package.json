@@ -25,6 +25,7 @@
     "vue-scrollmagic": "^1.2.0"
   },
   "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.4.0",
     "nodemon": "^2.0.4"
   }
 }

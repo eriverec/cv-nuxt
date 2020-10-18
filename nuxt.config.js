@@ -29,7 +29,7 @@ export default {
     ]
   },
   script: [{
-    src: 'https://www.googletagmanager.com/gtag/js?id=UA-249732089-1',
+    src: 'https://www.googletagmanager.com/gtag/js?id=249732089',
     async: true
   }],
 
@@ -56,7 +56,12 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
+    '@nuxtjs/google-analytics',
   ],
+
+  googleAnalytics: {
+    id: '249732089'
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
