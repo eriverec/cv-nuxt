@@ -37,7 +37,7 @@
         <h1 class="title is-3" data-aos="fade-up">Experencia Laboral</h1>
         <div v-html="$md.render(cv.fields.experienciaLaboral)"></div>
 
-        <div class="btn">watch me move!</div>
+        <div class="btn" data-aos="fade-up">watch me move!</div>
 
 
         <!-- REFERENCIA -->
@@ -54,17 +54,6 @@
     </div>
   </div>
 </template>
-
-<script>
-$(window).scroll(function () {
-  if ($(window).scrollTop() <= 1000) {
-    $(".btn").addClass("animated fadeInLeft");
-  } else {
-    $(".btn").removeClass("animated fadeInLeft");
-  }
-});
-</script>
-
 
 <script>
 import client from "~/plugins/contentful";
