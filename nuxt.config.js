@@ -1,4 +1,4 @@
-import client from './plugins/contentful'
+//import client from './plugins/contentful'
 
 require('dotenv').config()
 
@@ -31,10 +31,8 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '~/plugins/contentful',
     {
-      src: '~plugins/vue-scrollmagic.js',
-      ssr: false
+      src: '~/plugins/contentful'
     },
     { src: "@/plugins/aos", ssr: false }
   ],
