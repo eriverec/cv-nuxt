@@ -22,7 +22,7 @@ body {
 export default {
   data() {
     return {
-      title: "HOJA DE VIDA",
+      title: "Curriculum Vitae",
     };
   },
   head() {
