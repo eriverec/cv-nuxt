@@ -55,6 +55,7 @@
   </div>
 </template>
 
+
 <script>
 import client from "~/plugins/contentful";
 

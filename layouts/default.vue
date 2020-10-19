@@ -18,6 +18,7 @@ body {
 </style>
 
 
+
 <script>
 export default {
   data() {
@@ -55,7 +56,6 @@ export default {
           //type: "text/javascript",
           //src: "https://unpkg.com/aos@next/dist/aos.js",
         }, // Insert in body
-       
       ],
       style: [
         {

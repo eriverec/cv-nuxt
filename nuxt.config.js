@@ -29,7 +29,8 @@ export default {
     ]
   },
   script: [{
-    src: 'https://www.googletagmanager.com/gtag/js?id=249732089',
+    //src: 'https://www.googletagmanager.com/gtag/js?id=249732089',
+    src: 'https://www.googletagmanager.com/gtag/js?id=G-6SZ1KQ3M7B',    
     async: true
   }],
 
@@ -45,9 +46,10 @@ export default {
       src: '~/plugins/contentful'
     },
     {
-      src: '~/plugins/ga.js',
+      src: '~/plugins/ga',
       mode: 'client'
-    }
+    },
+   
     //{ src: "@/plugins/aos", ssr: false }
   ],
 
@@ -56,7 +58,8 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    '@nuxtjs/google-analytics',
+    '@nuxtjs/google-analytics',    
+    
   ],
 
   googleAnalytics: {
@@ -73,7 +76,26 @@ export default {
     '@nuxtjs-ext/bulma-extensions',
     '@neneos/nuxt-animate.css',
     '@nuxtjs/markdownit',
+    '@nuxtjs/gtm',
   ],
+
+  gtm: {
+    enabled : true ,
+    id: 'G-6SZ1KQ3M7B',
+    scriptId: 'gtm-script',
+    scriptDefer: false,
+    scriptURL: 'https://www.googletagmanager.com/gtm.js',
+
+    noscript: true,
+    noscriptId: 'gtm-noscript',
+    noscriptURL: 'https://www.googletagmanager.com/ns.html'
+  },
+
+  publicRuntimeConfig: {
+    gtm: {
+      id: process.env.GOOGLE_TAG_MANAGER_ID
+    }
+  },
 
   markdownit: {
     injected: true,
@@ -88,13 +110,6 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    postcss: {
-      preset: {
-        features: {
-          customProperties: false
-        }
-      }
-    },
     /*
     ** You can extend webpack config here
     */
