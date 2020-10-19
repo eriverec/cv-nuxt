@@ -60,6 +60,7 @@
 import client from "~/plugins/contentful";
 
 export default {
+
   //BLOG
   asyncData({ params }) {
     return client

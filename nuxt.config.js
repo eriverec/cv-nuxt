@@ -70,17 +70,14 @@ export default {
     '@nuxtjs-ext/bulma-extensions',
     '@neneos/nuxt-animate.css',
     '@nuxtjs/markdownit',
+    '@nuxtjs/google-analytics',
     '@nuxtjs/gtm',
-    [
-      '@dansmaculotte/nuxt-segment', {
-        segment: {
-          writeKey: 'CTAt39Kwy6TdzyKO5PjCDdRGN7pkpjNv',
-          disabled: false,
-          useRouter: true
-        },
-      }
-    ]
+ 
   ],
+
+  googleAnalytics: {
+    id: 'UA-2117395357'
+  },
 
 
 
@@ -90,7 +87,6 @@ export default {
     scriptId: 'gtm-script',
     scriptDefer: false,
     scriptURL: 'https://www.googletagmanager.com/gtm.js',
-
     noscript: true,
     noscriptId: 'gtm-noscript',
     noscriptURL: 'https://www.googletagmanager.com/ns.html'
