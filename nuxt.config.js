@@ -30,7 +30,7 @@ export default {
   },
   script: [{
     //src: 'https://www.googletagmanager.com/gtag/js?id=249732089',
-    src: 'https://www.googletagmanager.com/gtag/js?id=G-6SZ1KQ3M7B',    
+    src: 'https://www.googletagmanager.com/gtag/js?id=G-6SZ1KQ3M7B',
     async: true
   }],
 
@@ -45,11 +45,11 @@ export default {
     {
       src: '~/plugins/contentful'
     },
-    {
-      src: '~/plugins/ga',
-      mode: 'client'
-    },
-   
+    //{
+    //src: '~/plugins/ga',
+    //mode: 'client'
+    //},
+
     //{ src: "@/plugins/aos", ssr: false }
   ],
 
@@ -57,22 +57,9 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [
-    '@nuxtjs/google-analytics',    
-    
-  ],
+  buildModules: [],
 
-  googleAnalytics: {
-    id: '249732089',
-    enabled: true,
-    sendHitTask: true
-  },
 
-  publicRuntimeConfig: {
-    googleAnalytics: {
-      id: process.env.GOOGLE_ANALYTICS_ID
-    }
-  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
@@ -80,15 +67,25 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
     '@nuxtjs/bulma',
-    '@nuxtjs/pwa',
     '@nuxtjs-ext/bulma-extensions',
     '@neneos/nuxt-animate.css',
     '@nuxtjs/markdownit',
     '@nuxtjs/gtm',
+    [
+      '@dansmaculotte/nuxt-segment', {
+        segment: {
+          writeKey: 'CTAt39Kwy6TdzyKO5PjCDdRGN7pkpjNv',
+          disabled: false,
+          useRouter: true
+        },
+      }
+    ]
   ],
 
+
+
   gtm: {
-    enabled : true ,
+    enabled: true,
     id: 'G-6SZ1KQ3M7B',
     scriptId: 'gtm-script',
     scriptDefer: false,

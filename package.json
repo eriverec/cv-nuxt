@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@dansmaculotte/nuxt-segment": "^0.2.11",
     "@neneos/nuxt-animate.css": "0.0.1",
     "@nuxtjs-ext/bulma-extensions": "^1.0.0",
     "@nuxtjs/axios": "^5.12.2",
@@ -16,7 +17,6 @@
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/gtm": "^2.3.2",
     "@nuxtjs/markdownit": "^1.2.10",
-    "@nuxtjs/pwa": "^3.2.2",
     "aos": "^3.0.0-beta.6",
     "bulma-timeline": "^3.0.4",
     "contentful": "^7.14.7",
